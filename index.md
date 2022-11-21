@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Index
-redirect_to: https://oneshot.whistler.page/
+redirect_to: https://whistler.page/
 ---
 
 {% assign redirects = site.pages | where_exp: "item", "item.redirect_to != nil" %}
