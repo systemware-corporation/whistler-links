@@ -1,6 +1,5 @@
-title: Whistler ShortURLs
-description: Short URLs for Whistler Page.
-logo: /assets/img/logo.png
+title: Whistler Link
+description: Short URLs for WHISTLER.PAGE.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
@@ -9,5 +8,4 @@ permalink: /:slug/
 
 plugins:
   - jekyll-redirect-from
-
-#repository: hlaueriksson/jekyll-url-shortener
+  
