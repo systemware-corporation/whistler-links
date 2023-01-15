@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% if site.google_analytics %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}
+<meta charset="utf-8">
+<title>Redirecting...</title>
+<meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+<meta name="robots" content="noindex">
+</head>
+<body>
+<h1>Redirecting...</h1>
+<p>Click <a href="{{ page.redirect.to }}">here</a> if you are not redirected.</p>
+</body>
+</html>
